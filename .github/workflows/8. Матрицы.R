@@ -131,6 +131,8 @@ m_1[1, , drop = FALSE]              # возвращаем матрицу 1xN
 dim(m_1[1, , drop = FALSE])
 m_1[, 2, drop = FALSE]              # возвращаем матрицу Nx1
 dim(m_1[, 2, drop = FALSE])
+m_1[1, , drop = FALSE] %*% m_1      # работает правильно
+
 
 # Матрицы можно объединять
 cbind(m_1, m_2)             # по столбцам (сolumn bind)
